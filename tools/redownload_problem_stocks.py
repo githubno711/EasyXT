@@ -15,7 +15,7 @@ sys.path.insert(0, str(project_root))
 from data_manager.unified_data_interface import UnifiedDataInterface
 
 
-def find_problem_stocks(duckdb_path: str = r'D:/StockData/stock_data.ddb'):
+def find_problem_stocks(duckdb_path: str = r'E:/StockData/stock_data.ddb'):
     """查找有问题的股票"""
     con = duckdb.connect(duckdb_path, read_only=True)
 

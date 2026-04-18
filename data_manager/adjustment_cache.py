@@ -292,7 +292,7 @@ def test_adjustment_cache():
     print("复权查询测试（QMT API方案）")
     print("=" * 60)
 
-    db_path = r'D:/StockData/stock_data.ddb'
+    db_path = r'E:/StockData/stock_data.ddb'
     cache = AdjustmentCache(db_path)
 
     con = duckdb.connect(db_path)

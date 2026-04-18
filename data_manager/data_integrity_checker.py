@@ -67,7 +67,7 @@ class DataIntegrityChecker:
     4. 生成完整性报告
     """
 
-    def __init__(self, duckdb_path: str = r'D:/StockData/stock_data.ddb'):
+    def __init__(self, duckdb_path: str = r'E:/StockData/stock_data.ddb'):
         """
         初始化检查器
 

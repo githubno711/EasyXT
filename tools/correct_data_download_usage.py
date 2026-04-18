@@ -46,7 +46,7 @@ try:
     from easyxt_backtest import DataManager
 
     # 创建数据管理器（用于查询数据）
-    dm_query = DataManager(duckdb_path='D:/StockData/stock_data.ddb')
+    dm_query = DataManager(duckdb_path='E:/StockData/stock_data.ddb')
 
     # 查询数据
     print("正在查询数据...")

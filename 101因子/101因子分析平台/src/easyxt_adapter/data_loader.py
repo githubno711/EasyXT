@@ -103,11 +103,11 @@ class EasyXTDataLoader:
             from src.data_manager.duckdb_data_manager import DuckDBDataManager
 
             # 配置DuckDB路径 - 使用GUI下载的数据
-            # GUI数据路径: D:/StockData/stock_data.ddb
+            # GUI数据路径: E:/StockData/stock_data.ddb
             # 包含：PE、PB、市值、换手率等完整数据
 
             # 使用GUI的数据库（只读模式）
-            gui_db_path = Path('D:/StockData/stock_data.ddb')
+            gui_db_path = Path('E:/StockData/stock_data.ddb')
 
             if gui_db_path.exists():
                 # 使用GUI数据库

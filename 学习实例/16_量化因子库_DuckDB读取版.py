@@ -7,7 +7,7 @@
 3. 支持自定义股票列表
 
 使用方法：
-1. 确保DuckDB数据库存在: D:/StockData/stock_data.ddb
+1. 确保DuckDB数据库存在: E:/StockData/stock_data.ddb
 2. 修改要分析的股票列表
 3. 运行脚本
 
@@ -36,7 +36,7 @@ from easy_xt.data_api import DuckDBDataReader
 def _detect_duckdb_path():
     """自动检测DuckDB数据库路径"""
     candidates = [
-        'D:/StockData/stock_data.ddb',
+        'E:/StockData/stock_data.ddb',
         'C:/StockData/stock_data.ddb',
         'E:/StockData/stock_data.ddb',
         './data/stock_data.ddb',

@@ -488,7 +488,7 @@ def main():
                 with col1:
                     st.success("**DuckDB**")
                     st.caption("✅ 已连接")
-                    st.caption("📍 D:/StockData/")
+                    st.caption("📍 E:/StockData/")
                     st.caption("📊 2024年价格+市值数据")
 
                 with col2:

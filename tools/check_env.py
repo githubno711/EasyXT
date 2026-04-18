@@ -100,8 +100,8 @@ def main():
     # 5. DuckDB数据库检查
     print("\n[5] DuckDB数据库检查")
     duckdb_paths = [
-        'D:/StockData/stock_data.ddb',
-        'd:/stockdata/stock_data.ddb',
+        'E:/StockData/stock_data.ddb',
+        'E:/StockData/stock_data.ddb',
         './data/stock_data.ddb',
         '~/StockData/stock_data.ddb'
     ]

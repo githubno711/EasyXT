@@ -30,11 +30,11 @@ except ImportError:
 
 
 # 默认数据库路径常量
-DEFAULT_DB_PATH = 'D:/StockData/stock_data.ddb'
+DEFAULT_DB_PATH = 'E:/StockData/stock_data.ddb'
 
 # 常见数据库搜索路径（按优先级）
 _COMMON_DB_PATHS = [
-    'D:/StockData/stock_data.ddb',
+    'E:/StockData/stock_data.ddb',
     'C:/StockData/stock_data.ddb',
     'E:/StockData/stock_data.ddb',
     './data/stock_data.ddb',

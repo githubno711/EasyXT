@@ -111,7 +111,7 @@ class TushareDownloadThread(QThread):
             return env_path
         # 常见路径自动检测
         common_paths = [
-            'D:/StockData/stock_data.ddb',
+            'E:/StockData/stock_data.ddb',
             'C:/StockData/stock_data.ddb',
             'E:/StockData/stock_data.ddb',
             './data/stock_data.ddb',
@@ -121,7 +121,7 @@ class TushareDownloadThread(QThread):
             if os.path.exists(abs_path):
                 return abs_path
         # 默认路径（会自动创建目录）
-        return 'D:/StockData/stock_data.ddb'
+        return 'E:/StockData/stock_data.ddb'
 
     def _test_connection(self):
         """测试Tushare连接"""
@@ -1576,7 +1576,7 @@ class TushareDataWidget(QWidget):
             "- 财务数据：包括利润表、资产负债表、现金流量表\n"
             "- 分红数据：历史分红送股数据\n\n"
             "选择要下载的数据类型，设置参数后点击开始下载。\n"
-            "所有数据保存到 DuckDB 数据库（默认 D:/StockData/stock_data.ddb）"
+            "所有数据保存到 DuckDB 数据库（默认 E:/StockData/stock_data.ddb）"
         )
         info_label.setStyleSheet("""
             QLabel {

@@ -475,7 +475,7 @@ def page_backtest():
 
     if use_real_data:
         st.info("💡 使用DuckDB数据：支持所有基本面因子（市值、PE、ROE等）")
-        st.caption("📍 数据来源: D:/StockData/ (Tushare历史数据)")
+        st.caption("📍 数据来源: E:/StockData/ (Tushare历史数据)")
     else:
         st.warning("⚠️ 使用模拟数据：仅支持技术因子，不支持基本面因子")
 

@@ -27,7 +27,7 @@ class UnifiedDataInterface:
     5. 支持5种复权类型（通过QMT API按需获取，不预存复权列）
     """
 
-    def __init__(self, duckdb_path: str = r'D:/StockData/stock_data.ddb'):
+    def __init__(self, duckdb_path: str = r'E:/StockData/stock_data.ddb'):
         """
         初始化统一数据接口
 
@@ -1056,7 +1056,7 @@ def get_stock_data(
     end_date: str,
     period: str = '1d',
     adjust: str = 'none',
-    duckdb_path: str = r'D:/StockData/stock_data.ddb'
+    duckdb_path: str = r'E:/StockData/stock_data.ddb'
 ) -> pd.DataFrame:
     """
     便捷函数：获取股票数据（统一入口）

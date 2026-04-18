@@ -81,7 +81,7 @@ class DataManager:
         # 读取.env文件
         self._load_env_file()
 
-        self.duckdb_path = duckdb_path or os.getenv('DUCKDB_PATH', 'D:/StockData/stock_data.ddb')
+        self.duckdb_path = duckdb_path or os.getenv('DUCKDB_PATH', 'E:/StockData/stock_data.ddb')
         self.tushare_token = tushare_token or os.getenv('TUSHARE_TOKEN')
 
         # 数据源连接

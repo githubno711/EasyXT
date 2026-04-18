@@ -172,13 +172,13 @@ try:
     # 连接数据库
     import duckdb
     db_path = None
-    for candidate in ['D:/StockData/stock_data.ddb', 'C:/StockData/stock_data.ddb',
+    for candidate in ['E:/StockData/stock_data.ddb', 'C:/StockData/stock_data.ddb',
                      'E:/StockData/stock_data.ddb', './data/stock_data.ddb']:
         if os.path.exists(candidate):
             db_path = candidate
             break
     if not db_path:
-        db_path = 'D:/StockData/stock_data.ddb'
+        db_path = 'E:/StockData/stock_data.ddb'
         os.makedirs(os.path.dirname(db_path), exist_ok=True)
 
     conn = duckdb.connect(db_path)

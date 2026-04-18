@@ -31,7 +31,7 @@ class SafeDataUpdater:
     3. 使用连接管理器安全更新
     """
 
-    def __init__(self, duckdb_path: str = r'D:/StockData/stock_data.ddb'):
+    def __init__(self, duckdb_path: str = r'E:/StockData/stock_data.ddb'):
         self.duckdb_path = duckdb_path
         self.manager = get_db_manager(duckdb_path)
 

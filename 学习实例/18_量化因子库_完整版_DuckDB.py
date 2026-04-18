@@ -47,7 +47,7 @@ from easy_xt.data_api import DuckDBDataReader
 # DuckDB数据库路径（自动检测常见位置，也可手动指定）
 def _detect_duckdb_path():
     candidates = [
-        'D:/StockData/stock_data.ddb',
+        'E:/StockData/stock_data.ddb',
         'C:/StockData/stock_data.ddb',
         'E:/StockData/stock_data.ddb',
         './data/stock_data.ddb',

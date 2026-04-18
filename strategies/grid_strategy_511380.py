@@ -776,7 +776,7 @@ class GridBacktester:
             print(f"[步骤1/3] 查询表: {table_name}")
 
             import duckdb
-            db_path = 'D:/StockData/stock_data.ddb'
+            db_path = 'E:/StockData/stock_data.ddb'
             con = duckdb.connect(db_path, read_only=True)
 
             # 构建查询（根据不同的表使用不同的字段）
@@ -938,7 +938,7 @@ class GridBacktester:
             print(f"[步骤3/3] 目标表: {table_name}")
 
             import duckdb
-            db_path = 'D:/StockData/stock_data.ddb'
+            db_path = 'E:/StockData/stock_data.ddb'
             con = duckdb.connect(db_path)
 
             # 准备数据

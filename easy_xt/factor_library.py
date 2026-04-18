@@ -51,7 +51,7 @@ class EasyFactor:
     >>> from easy_xt.factor_library import EasyFactor
     >>>
     >>> # 初始化（只需指定数据库路径）
-    >>> ef = EasyFactor(duckdb_path='D:/StockData/stock_data.ddb')
+    >>> ef = EasyFactor(duckdb_path='E:/StockData/stock_data.ddb')
     >>>
     >>> # 获取数据
     >>> df = ef.get_market_data_ex('000001.SZ', '20240101', '20241231')
@@ -1410,9 +1410,9 @@ def create_easy_factor(duckdb_path: str,
     示例:
     >>> from easy_xt.factor_library import create_easy_factor
     >>> # 基础版本（仅因子计算）
-    >>> ef = create_easy_factor('D:/StockData/stock_data.ddb')
+    >>> ef = create_easy_factor('E:/StockData/stock_data.ddb')
     >>> # 完整版本（包含扩展模块）
-    >>> ef = create_easy_factor('D:/StockData/stock_data.ddb', enable_extended_modules=True)
+    >>> ef = create_easy_factor('E:/StockData/stock_data.ddb', enable_extended_modules=True)
     >>> results = ef.analyze_batch(stock_list, '2024-01-01', '2024-11-30')
     """
     return EasyFactor(duckdb_path=duckdb_path, enable_extended_modules=enable_extended_modules)
@@ -1440,7 +1440,7 @@ if __name__ == "__main__":
     # 示例1：初始化
     print("\n[示例1] 初始化EasyFactor")
     print("-" * 90)
-    duckdb_path = r'D:/StockData/stock_data.ddb'
+    duckdb_path = r'E:/StockData/stock_data.ddb'
 
     try:
         ef = create_easy_factor(duckdb_path)
@@ -1477,7 +1477,7 @@ if __name__ == "__main__":
     from easy_xt.factor_library import create_easy_factor
 
     # 初始化
-    ef = create_easy_factor('D:/StockData/stock_data.ddb')
+    ef = create_easy_factor('E:/StockData/stock_data.ddb')
 
     # 获取股票列表
     stocks = ef.get_stock_list(limit=100)

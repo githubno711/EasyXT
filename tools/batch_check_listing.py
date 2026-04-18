@@ -31,7 +31,7 @@ if not TOKEN:
 ts.set_token(TOKEN)
 pro = ts.pro_api()
 
-DUCKDB_PATH = os.getenv('DUCKDB_PATH', 'D:/StockData/stock_data.ddb')
+DUCKDB_PATH = os.getenv('DUCKDB_PATH', 'E:/StockData/stock_data.ddb')
 
 print("="*70)
 print("批量检查股票上市日期（稳健版）")

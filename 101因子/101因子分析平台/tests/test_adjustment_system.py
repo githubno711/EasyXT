@@ -131,7 +131,7 @@ def test_local_data_manager():
     from data_manager.local_data_manager_with_adjustment import LocalDataManager
 
     # 创建测试数据目录
-    test_dir = Path("D:/StockData_TEST")
+    test_dir = Path("E:/StockData_TEST")
     if test_dir.exists():
         import shutil
         shutil.rmtree(test_dir)
@@ -203,7 +203,7 @@ def test_usage_scenario():
 
     from data_manager.local_data_manager_with_adjustment import LocalDataManager
 
-    test_dir = Path("D:/StockData_TEST")
+    test_dir = Path("E:/StockData_TEST")
     if test_dir.exists():
         import shutil
         shutil.rmtree(test_dir)

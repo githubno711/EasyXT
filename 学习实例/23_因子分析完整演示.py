@@ -17,7 +17,7 @@
 数据要求：
 -----------
 - 需要DuckDB数据库（stock_data.ddb）
-- 数据库位置: D:/StockData/, C:/StockData/, E:/StockData/
+- 数据库位置: E:/StockData/, C:/StockData/, E:/StockData/
 - 如无数据，脚本会显示详细的下载指南
 
 作者：101因子分析平台
@@ -148,7 +148,7 @@ print("-" * 80)
 def detect_duckdb_path():
     """自动检测DuckDB数据库路径"""
     candidates = [
-        'D:/StockData/stock_data.ddb',
+        'E:/StockData/stock_data.ddb',
         'C:/StockData/stock_data.ddb',
         'E:/StockData/stock_data.ddb',
         './data/stock_data.ddb',

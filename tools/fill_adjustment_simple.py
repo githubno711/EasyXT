@@ -11,7 +11,7 @@ from datetime import datetime
 
 def fill_adjustment_simple():
     """简单填充复权数据（直接复制原始数据）"""
-    duckdb_path = r'D:/StockData/stock_data.ddb'
+    duckdb_path = r'E:/StockData/stock_data.ddb'
 
     print("=" * 80)
     print("简单填充五维复权数据")

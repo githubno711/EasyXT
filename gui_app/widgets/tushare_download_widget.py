@@ -58,7 +58,7 @@ class TushareDownloadThread(QThread):
     def _get_db_path(self):
         """获取DuckDB数据库路径（自动检测）"""
         common_paths = [
-            'D:/StockData/stock_data.ddb',
+            'E:/StockData/stock_data.ddb',
             'C:/StockData/stock_data.ddb',
             'E:/StockData/stock_data.ddb',
             './data/stock_data.ddb',
@@ -67,7 +67,7 @@ class TushareDownloadThread(QThread):
             abs_path = os.path.abspath(path)
             if os.path.exists(abs_path):
                 return abs_path
-        return 'D:/StockData/stock_data.ddb'
+        return 'E:/StockData/stock_data.ddb'
 
     def run(self):
         """运行下载任务"""

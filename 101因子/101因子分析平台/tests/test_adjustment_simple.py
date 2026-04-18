@@ -121,7 +121,7 @@ def test_all():
         from data_manager.local_data_manager_with_adjustment import LocalDataManager
 
         # 创建测试目录
-        test_dir = Path("D:/StockData_TEST")
+        test_dir = Path("E:/StockData_TEST")
         if test_dir.exists():
             import shutil
             shutil.rmtree(test_dir)

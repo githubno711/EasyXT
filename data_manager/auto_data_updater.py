@@ -56,7 +56,7 @@ class AutoDataUpdater:
     """
 
     def __init__(self,
-                 duckdb_path: str = r'D:/StockData/stock_data.ddb',
+                 duckdb_path: str = r'E:/StockData/stock_data.ddb',
                  update_time: str = '15:30'):
         """
         初始化自动更新器

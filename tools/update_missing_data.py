@@ -31,7 +31,7 @@ def update_missing_stock_data(stock_codes=None, days_behind=30):
         import pandas as pd
 
         print("\n[步骤1] 连接数据源...")
-        manager = get_db_manager(r'D:/StockData/stock_data.ddb')
+        manager = get_db_manager(r'E:/StockData/stock_data.ddb')
 
         print("[步骤2] 查找需要更新的股票...")
 

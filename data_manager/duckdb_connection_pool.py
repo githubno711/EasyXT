@@ -27,7 +27,7 @@ class DuckDBConnectionManager:
     _instance = None
     _lock = threading.Lock()
 
-    def __new__(cls, duckdb_path: str = r'D:/StockData/stock_data.ddb'):
+    def __new__(cls, duckdb_path: str = r'E:/StockData/stock_data.ddb'):
         if cls._instance is None:
             with cls._lock:
                 if cls._instance is None:
@@ -35,7 +35,7 @@ class DuckDBConnectionManager:
                     cls._instance._initialized = False
         return cls._instance
 
-    def __init__(self, duckdb_path: str = r'D:/StockData/stock_data.ddb'):
+    def __init__(self, duckdb_path: str = r'E:/StockData/stock_data.ddb'):
         if self._initialized:
             return
 
@@ -159,7 +159,7 @@ class DuckDBConnectionManager:
 _db_manager = None
 
 
-def get_db_manager(duckdb_path: str = r'D:/StockData/stock_data.ddb') -> DuckDBConnectionManager:
+def get_db_manager(duckdb_path: str = r'E:/StockData/stock_data.ddb') -> DuckDBConnectionManager:
     """获取数据库管理器单例"""
     global _db_manager
     if _db_manager is None:

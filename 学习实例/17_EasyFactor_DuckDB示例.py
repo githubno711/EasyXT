@@ -22,7 +22,7 @@ print("=" * 90)
 # DuckDB数据库路径（自动检测常见位置，也可手动指定）
 def _detect_duckdb_path():
     candidates = [
-        'D:/StockData/stock_data.ddb',
+        'E:/StockData/stock_data.ddb',
         'C:/StockData/stock_data.ddb',
         'E:/StockData/stock_data.ddb',
         './data/stock_data.ddb',
@@ -46,13 +46,13 @@ print("=" * 90)
 print("\n代码：")
 print("""
 # 方式1：使用EasyFactor类
-ef = EasyFactor(duckdb_path='D:/StockData/stock_data.ddb')
+ef = EasyFactor(duckdb_path='E:/StockData/stock_data.ddb')
 
 # 方式2：使用便捷函数
-ef = create_easy_factor('D:/StockData/stock_data.ddb')
+ef = create_easy_factor('E:/StockData/stock_data.ddb')
 
 # 方式3：使用别名（向后兼容）
-ef = create_duckdb_factor('D:/StockData/stock_data.ddb')
+ef = create_duckdb_factor('E:/StockData/stock_data.ddb')
 """)
 
 print("\n执行结果：")
@@ -359,7 +359,7 @@ print("=" * 90)
 
 best_practices = """
 【1】初始化：
-  ef = EasyFactor(duckdb_path='D:/StockData/stock_data.ddb')
+  ef = EasyFactor(duckdb_path='E:/StockData/stock_data.ddb')
 
 【2】单股票因子分析：
   momentum = ef.get_factor('000001.SZ', 'momentum_20d', '2024-01-01', '2024-11-30')

@@ -115,7 +115,7 @@ class EnvConfig:
     @property
     def duckdb_path(self) -> str:
         """获取 DuckDB 数据库路径"""
-        return self.get('DUCKDB_PATH', 'D:/StockData/stock_data.ddb')
+        return self.get('DUCKDB_PATH', 'E:/StockData/stock_data.ddb')
 
 
 # 全局配置实例

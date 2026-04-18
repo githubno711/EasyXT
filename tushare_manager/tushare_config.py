@@ -14,7 +14,7 @@ from typing import Optional
 class TushareConfig:
     """Tushare配置管理器"""
 
-    DEFAULT_DB_PATH = 'D:/StockData/stock_data.ddb'
+    DEFAULT_DB_PATH = 'E:/StockData/stock_data.ddb'
 
     def __init__(self, config_path: Optional[str] = None):
         """

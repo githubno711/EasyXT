@@ -35,7 +35,7 @@ class FiveFoldAdjustmentManager:
         'geometric_back': '等比后复权'
     }
 
-    def __init__(self, duckdb_path: str = r'D:/StockData/stock_data.ddb'):
+    def __init__(self, duckdb_path: str = r'E:/StockData/stock_data.ddb'):
         """
         初始化五维复权管理器
 

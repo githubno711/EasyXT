@@ -14,7 +14,7 @@ from .adjustment_calculator import AdjustmentCalculator
 class LocalDataManager:
     """本地数据管理器（支持复权）"""
 
-    def __init__(self, data_dir: str = "D:/StockData"):
+    def __init__(self, data_dir: str = "E:/StockData"):
         """
         初始化本地数据管理器
 

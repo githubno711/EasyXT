@@ -139,7 +139,7 @@ class DataManagerConfig:
         """
         # 常见路径列表（按优先级）
         possible_paths = [
-            'D:/StockData/stock_data.ddb',  # Windows D盘
+            'E:/StockData/stock_data.ddb',  # Windows D盘
             'C:/StockData/stock_data.ddb',  # Windows C盘
             'E:/StockData/stock_data.ddb',  # Windows E盘
             './data/stock_data.ddb',        # 项目相对路径

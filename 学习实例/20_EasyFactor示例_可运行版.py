@@ -38,7 +38,7 @@ print("=" * 90)
 # DuckDB数据库路径（自动检测常见位置，也可手动指定）
 def _detect_duckdb_path():
     candidates = [
-        'D:/StockData/stock_data.ddb',
+        'E:/StockData/stock_data.ddb',
         'C:/StockData/stock_data.ddb',
         'E:/StockData/stock_data.ddb',
         './data/stock_data.ddb',
@@ -219,7 +219,7 @@ EasyFactor DuckDB版 主要功能：
 
 示例代码：
     # 初始化
-    ef = EasyFactor(duckdb_path='D:/StockData/stock_data.ddb')
+    ef = EasyFactor(duckdb_path='E:/StockData/stock_data.ddb')
 
     # 获取市场数据（注意日期格式：YYYY-MM-DD）
     df = ef.get_market_data_ex('000001.SZ', '2024-01-01', '2024-12-31')

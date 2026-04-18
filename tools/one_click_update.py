@@ -28,7 +28,7 @@ def update_data():
         from xtquant import xtdata
         import duckdb
 
-        db_path = r'D:/StockData/stock_data.ddb'
+        db_path = r'E:/StockData/stock_data.ddb'
 
         # 步骤1：检查需要更新的股票
         print("[步骤1] 检查需要更新的股票...")
